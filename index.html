@@ -3,11 +3,81 @@
 <head lang="uk">
     <meta charset="UTF-8">
     <title>My Page</title>
-
-
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-<h1>Hello World</h1>
+    <div class="panelsWrapper">
+    <div class="panels">
+        <div class="left-panel">
+            <div class="add-field">
+                <input type="text" class="productNameField" name="ProductNameField" placeholder="  Назва товару"/><button class="addButton" type="button">Додати</button>
+            </div>
+            <div class="product-list">
+                <div class="line">
+                    <div class="tomatos">
+                         <div class="wrapper">
+                        <span class="productName">
+                        Помідори</span>
+                        </div>
+                        <span class="addDeleteAmount">
+                        <button class="decrease">-</button>
+                            <span class="currentAmount">1</span>
+                        <button class="increase">+</button>
+                        </span>
+                        <span class="buyedAndCanceled"><button class="buyed">Куплено</button>
+                        <button class="cancel">х</button></span>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="tomatos">
+                         <div class="wrapper">
+                        <span class="productName">
+                        Печиво</span>
+                        </div>
+                        <span class="addDeleteAmount">
+                        <button class="decrease">-</button>
+                            <span class="currentAmount">1</span>
+                        <button class="increase">+</button>
+                        </span>
+                        <span class="buyedAndCanceled"><button class="buyed">Куплено</button>
+                        <button class="cancel">х</button></span>
+                    </div>
+                </div>
+                 <div class="line">
+                    <div class="tomatos">
+                        <div class="wrapper">
+                        <span class="productName">
+                        Сир</span>
+                        </div>
+                        <span class="addDeleteAmount">
+                        <button class="decrease">-</button>
+                            <span class="currentAmount">1</span>
+                        <button class="increase">+</button>
+                        </span>
+                        <span class="buyedAndCanceled"><button class="buyed">Куплено</button>
+                        <button class="cancel">х</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="right-panel">
+        <div class="leftWrapper">
+        <div class="left">
+            Залишилося
+        </div>
+        </div>
+        <div class="leftListWrapper">
+        <div class="leftList">
+            <span>Помідори <text class="leftAmount">5</text></span>
+            <span>Печиво <text class="leftAmount">5</text></span>
+            <span>Сир <text class="leftAmount">5</text></span>
+        </div>
+        </div>
+        <div class="buyedLabelWrapper">
+        <div class="buyedLabel">
+        Куплено</div>
+         </div>
+    </div>
+    </div>
 </body>
 </html>

@@ -7,13 +7,14 @@ body{
     margin-top:100px;
 }
 .panels div{
-    background-color: white;
+   
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 .left-panel{
+     background-color: white;
     width:800px;
-    height:100px;
+    height:100%;
     float:left;
     border-radius:5px;
     box-shadow:0 0 7px grey;
@@ -25,7 +26,6 @@ body{
     margin-bottom:10px;
 }
 .add-field input, button{
-    padding:0;
     margin:0;
     height:35px;
 }
@@ -34,6 +34,7 @@ body{
     width:80%;
     border-radius:5px 0 0 5px;
     border:1px solid lightgrey;
+    padding-left:10px;
     
 }
 .addButton{
@@ -47,24 +48,38 @@ body{
     border:10px;
     box-sizing: content-box;
 }
-.line{
+.productRow{
     border-top:1px solid lightgrey;
+    margin-bottom:10px;
+    height:25px;
+      
 }
 .product-list{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.product-list .tomatos{
-    margin-left: 10px;
+.product-list .productRow{
+    padding-left: 10px;
     padding-bottom:10px;
     padding-top:10px;
 }
-.wrapper{
+.productName{
     float:left;
     width:100px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.productNameInput{
+     float:left;
+    width:100px;
+    display: table-cell;
+    vertical-align: middle;
 }
 .addDeleteAmount{
-    margin-left:25%;
+    text-align: center;
+    width:500px;
+    display: inline-block;
+    
 }
 .currentAmount{
     background-color:#E8E8E8;
@@ -85,8 +100,14 @@ body{
     font-size:18px;
     border:10px;
     box-shadow: 0 2px darkred;
+    outline:none;
+}
+.disabledDecrease{
+     pointer-events:none;
+     opacity:0.3;
 }
 .increase{
+    outline:none;
     width:30px;
     height:30px;
     border-radius:20px;
@@ -104,6 +125,7 @@ body{
     box-shadow:0 2px darkgrey;
     height:30px;
     background-color:#E8E8E8;
+    margin-bottom:10px;
 }
 .cancel{
     background-color:#DB2828;
@@ -122,6 +144,7 @@ body{
 }
 
 .right-panel{
+     background-color: white;
     width:400px;
     height:100%;
     float:left;
@@ -144,6 +167,27 @@ body{
     font-size:20px;
     margin-left:10px;
 }
+.productNameBuyed{
+    text-decoration:line-through;
+}
+.increaseBuyed{
+    pointer-events:none;
+    opacity:0;
+}
+.decreaseBuyed{
+   pointer-events:none;
+    opacity:0;
+}
+.cancelBuyed{
+    pointer-events:none;
+    opacity:0;
+}
+.buyedBuyed{
+    display:none;
+}
+.notBuyed{
+    display:none;
+}
 .buyedLabelWrapper{
     border-bottom:1px solid lightgrey;
 }
@@ -152,15 +196,19 @@ body{
     font-size:20px;
     margin-left:10px;
 }
+
 .leftListWrapper{
     border-bottom:1px solid lightgrey;
+    
 }
-.leftList span{
+.leftLabelInputWrapper{
+    display:inline-block;
     background-color:#E8E8E8;
     padding:8px 10px;
     font-size:12px;
     border-radius:3px;
     margin-left:5px;
+    margin-top:5px;
 }
 
 .leftAmount{
@@ -168,4 +216,14 @@ body{
     color:white;
     padding:5px 10px;
     border-radius:15px;
+}
+.buyedListWrapper{
+    border-bottom:1px solid lightgrey;
+}
+.buyedList span{
+    background-color:#E8E8E8;
+    padding:8px 10px;
+    font-size:12px;
+    border-radius:3px;
+    margin-left:5px;
 }

@@ -9,57 +9,34 @@
     <div class="panelsWrapper">
     <div class="panels">
         <div class="left-panel">
-            <div class="add-field">
-                <input type="text" class="productNameField" name="ProductNameField" placeholder="  Назва товару"/><button class="addButton" type="button">Додати</button>
-            </div>
+            <form class="add-field">
+                <input type="text" class="productNameField" name="productNameField" placeholder="Назва товару"/><input class="addButton" type="submit" value="Додати"/>
+            </form>
             <div class="product-list">
-                <div class="line">
-                    <div class="tomatos">
-                         <div class="wrapper">
-                        <span class="productName">
-                        Помідори</span>
-                        </div>
-                        <span class="addDeleteAmount">
-                        <button class="decrease">-</button>
-                            <span class="currentAmount">1</span>
-                        <button class="increase">+</button>
-                        </span>
-                        <span class="buyedAndCanceled"><button class="buyed">Куплено</button>
-                        <button class="cancel">х</button></span>
-                    </div>
-                </div>
-                <div class="line">
-                    <div class="tomatos">
-                         <div class="wrapper">
-                        <span class="productName">
-                        Печиво</span>
-                        </div>
-                        <span class="addDeleteAmount">
-                        <button class="decrease">-</button>
-                            <span class="currentAmount">1</span>
-                        <button class="increase">+</button>
-                        </span>
-                        <span class="buyedAndCanceled"><button class="buyed">Куплено</button>
-                        <button class="cancel">х</button></span>
-                    </div>
-                </div>
-                 <div class="line">
-                    <div class="tomatos">
-                        <div class="wrapper">
-                        <span class="productName">
-                        Сир</span>
-                        </div>
-                        <span class="addDeleteAmount">
-                        <button class="decrease">-</button>
-                            <span class="currentAmount">1</span>
-                        <button class="increase">+</button>
-                        </span>
-                        <span class="buyedAndCanceled"><button class="buyed">Куплено</button>
-                        <button class="cancel">х</button></span>
-                    </div>
-                </div>
+                
             </div>
         </div>
+    
+        <div class="line" style="display:none;">
+                    <div class="productRow">
+                        <span class="productName"></span>
+                        <input type="text" class="productNameInput" style="display:none;" value=""/>
+                        <div class="addDeleteAmount">
+                        <button class="decrease disabledDecrease">-</button>
+                        <span class="currentAmount">1</span>
+                        <button class="increase">+</button>
+                        </div>
+                        <span class="buyedAndCanceled"><button class="buyed">Куплено</button>
+                        <button class="cancel">х</button>
+                            <button class="notBuyed">Не куплено</button></span>
+                       
+                    </div>
+                </div>
+        
+        
+        
+        
+ 
     <div class="right-panel">
         <div class="leftWrapper">
         <div class="left">
@@ -67,17 +44,23 @@
         </div>
         </div>
         <div class="leftListWrapper">
-        <div class="leftList">
-            <span>Помідори <text class="leftAmount">5</text></span>
-            <span>Печиво <text class="leftAmount">5</text></span>
-            <span>Сир <text class="leftAmount">5</text></span>
-        </div>
+        <div class="leftList"></div>
         </div>
         <div class="buyedLabelWrapper">
         <div class="buyedLabel">
         Куплено</div>
          </div>
+        <div class="buyedListWrapper">
+        <div class="buyedList"></div>
+        </div>
     </div>
     </div>
+     <div class="leftLabelWrapper" style="display:none;">
+         <span class="leftLabelInputWrapper"><label class="leftName"></label><label class="leftAmount"></label></span>
+     </div>      
+ 
+         
+    <script	type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js">	</script>
+    <script	type="text/javascript" src="main.js"></script>
 </body>
 </html>
